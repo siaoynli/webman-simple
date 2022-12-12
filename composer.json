@@ -45,7 +45,10 @@
     "shopwwi/webman-filesystem": "^1.0",
     "shopwwi/filesystem-oss": "^1.0",
     "workerman/validation": "^3.0",
-    "symfony/translation": "^6.0"
+    "symfony/translation": "^6.0",
+    "overtrue/wechat": "^5.0",
+    "teamones/casbin": "^0.0.1",
+    "yansongda/pay": "~3.1.0"
   },
   "suggest": {
     "ext-event": "For better performance. "
@@ -70,5 +73,10 @@
     "pre-package-uninstall": [
       "support\\Plugin::uninstall"
     ]
+  },
+  "config": {
+    "allow-plugins": {
+      "easywechat-composer/easywechat-composer": true
+    }
   }
 }
