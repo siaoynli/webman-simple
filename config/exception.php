@@ -15,5 +15,5 @@
 
 return [
     // '' => support\exception\Handler::class,
-    '' => App\Exceptions\Handler::class,
+    '' => app\exceptions\Handler::class,
 ];
