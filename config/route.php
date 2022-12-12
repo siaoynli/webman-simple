@@ -23,3 +23,4 @@ Route::get('/test', [app\controller\IndexController::class, 'db']);
 Route::get('/model', [app\controller\IndexController::class, 'test']);
 Route::get('/sync', [app\controller\QueueController::class, 'index']);
 Route::get('/async', [app\controller\QueueController::class, 'queue']);
+Route::get('/stomp', [app\controller\QueueController::class, 'stomp']);

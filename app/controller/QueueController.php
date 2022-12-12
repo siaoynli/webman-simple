@@ -5,6 +5,7 @@ namespace app\controller;
 use support\Request;
 use Webman\RedisQueue\Redis;
 use Webman\RedisQueue\Client;
+use Webman\Stomp\Client as StompClient;
 
 class QueueController extends BaseController
 {
@@ -37,5 +38,18 @@ class QueueController extends BaseController
         Client::send($queue, $data, 60);
 
         return response('redis queue async test');
+    }
+
+
+    public function stomp(Request $request)
+    {
+        // 队列
+        $queue = 'examples';
+        // 数据（传递数组时需要自行序列化，比如使用json_encode，serialize等）
+        $data = json_encode(['to' => 'tom@gmail.com', 'content' => 'hello']);
+        // 执行投递
+        StompClient::send($queue, $data);
+
+        return response('rebbitmq queue test');
     }
 }
