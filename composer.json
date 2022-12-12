@@ -29,7 +29,11 @@
     "monolog/monolog": "^2.0",
     "vlucas/phpdotenv": "^4.0",
     "psr/container": "^1.1.1",
-    "webman/blade": "^1.5"
+    "webman/blade": "^1.5",
+    "illuminate/database": "^9.43",
+    "illuminate/pagination": "^9.43",
+    "illuminate/events": "^9.43",
+    "symfony/var-dumper": "^6.0"
   },
   "suggest": {
     "ext-event": "For better performance. "

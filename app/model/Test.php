@@ -2,9 +2,9 @@
 
 namespace app\model;
 
-use support\Model;
 
-class Test extends Model
+
+class Test extends  Base
 {
     /**
      * The table associated with the model.
@@ -19,11 +19,4 @@ class Test extends Model
      * @var string
      */
     protected $primaryKey = 'id';
-
-    /**
-     * Indicates if the model should be timestamped.
-     *
-     * @var bool
-     */
-    public $timestamps = false;
 }
