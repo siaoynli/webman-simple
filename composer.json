@@ -35,7 +35,8 @@
     "illuminate/events": "^9.43",
     "symfony/var-dumper": "^6.0",
     "illuminate/redis": "^9.43",
-    "symfony/cache": "^6.0"
+    "symfony/cache": "^6.0",
+    "webman/redis-queue": "^1.2"
   },
   "suggest": {
     "ext-event": "For better performance. "

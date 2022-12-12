@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of webman.
  *
@@ -15,7 +16,7 @@
 return [
     'default' => [
         'host' => '127.0.0.1',
-        'password' => null,
+        'password' => '3wbU2ZkhwH2RFiux',
         'port' => 6379,
         'database' => 0,
     ],
