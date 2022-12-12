@@ -5,17 +5,20 @@ namespace app\controller;
 use app\model\Test;
 use support\Request;
 use support\Db;
+use Shopwwi\LaravelCache\Cache;
 
 class IndexController extends BaseController
 {
     public function index(Request $request)
     {
+        Cache::put('title', 'webman', $seconds = 10);
         return response('hello world');
     }
 
     public function view(Request $request)
     {
-        return view('index/view', ['name' => 'webman']);
+        $title = Cache::get('title', 'webman-default');
+        return view('index/view', ['name' => $title]);
     }
 
     public function json(Request $request)

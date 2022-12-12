@@ -37,7 +37,8 @@
     "illuminate/redis": "^9.43",
     "symfony/cache": "^6.0",
     "webman/redis-queue": "^1.2",
-    "webman/stomp": "^1.1"
+    "webman/stomp": "^1.1",
+    "shopwwi/laravel-cache": "^1.0"
   },
   "suggest": {
     "ext-event": "For better performance. "

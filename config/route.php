@@ -19,6 +19,7 @@ use Webman\Route;
 Route::disableDefaultRoute();
 
 Route::get('/', [app\controller\IndexController::class, 'index']);
+Route::get('/view', [app\controller\IndexController::class, 'view']);
 Route::get('/test', [app\controller\IndexController::class, 'db']);
 Route::get('/model', [app\controller\IndexController::class, 'test']);
 Route::get('/sync', [app\controller\QueueController::class, 'index']);

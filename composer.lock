@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f5cf3ee8a9b0eba3bf62c34da57e3c63",
+    "content-hash": "131835a5948195552d6d7685da321bd6",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -161,6 +161,72 @@
                 "source": "https://github.com/laravel/framework"
             },
             "time": "2022-11-25T07:56:47+00:00"
+        },
+        {
+            "name": "illuminate/cache",
+            "version": "v9.43.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/illuminate/cache.git",
+                "reference": "8ba188bcfad7d2b5ed13f8cd1ccbb67db22cfa04"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/illuminate/cache/zipball/8ba188bcfad7d2b5ed13f8cd1ccbb67db22cfa04",
+                "reference": "8ba188bcfad7d2b5ed13f8cd1ccbb67db22cfa04",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "illuminate/collections": "^9.0",
+                "illuminate/contracts": "^9.0",
+                "illuminate/macroable": "^9.0",
+                "illuminate/support": "^9.0",
+                "php": "^8.0.2"
+            },
+            "provide": {
+                "psr/simple-cache-implementation": "1.0|2.0|3.0"
+            },
+            "suggest": {
+                "ext-memcached": "Required to use the memcache cache driver.",
+                "illuminate/database": "Required to use the database cache driver (^9.0).",
+                "illuminate/filesystem": "Required to use the file cache driver (^9.0).",
+                "illuminate/redis": "Required to use the redis cache driver (^9.0).",
+                "symfony/cache": "Required to use PSR-6 cache bridge (^6.0)."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "9.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Illuminate\\Cache\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "The Illuminate Cache package.",
+            "homepage": "https://laravel.com",
+            "support": {
+                "issues": "https://github.com/laravel/framework/issues",
+                "source": "https://github.com/laravel/framework"
+            },
+            "time": "2022-08-24T13:50:51+00:00"
         },
         {
             "name": "illuminate/collections",
@@ -1517,6 +1583,61 @@
                 "source": "https://github.com/php-fig/simple-cache/tree/3.0.0"
             },
             "time": "2021-10-29T13:26:27+00:00"
+        },
+        {
+            "name": "shopwwi/laravel-cache",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/shopwwi/laravel-cache.git",
+                "reference": "7e6f65580dee3085f729d5d3df850b0b3a3a6ebc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/shopwwi/laravel-cache/zipball/7e6f65580dee3085f729d5d3df850b0b3a3a6ebc",
+                "reference": "7e6f65580dee3085f729d5d3df850b0b3a3a6ebc",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "illuminate/cache": "^9.0|^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Shopwwi\\LaravelCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Tycoon Song",
+                    "email": "8988354@qq.com"
+                }
+            ],
+            "description": "laravel-cache for the webman",
+            "keywords": [
+                "laravel-cache",
+                "webman"
+            ],
+            "support": {
+                "issues": "https://github.com/shopwwi/laravel-cache/issues",
+                "source": "https://github.com/shopwwi/laravel-cache/tree/v1.0.1"
+            },
+            "time": "2022-10-02T03:14:10+00:00"
         },
         {
             "name": "symfony/cache",
