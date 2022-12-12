@@ -40,11 +40,11 @@
     "webman/stomp": "^1.1",
     "shopwwi/laravel-cache": "^1.0",
     "yzh52521/easyhttp": "^1.0",
-    "webman-tech/laravel-validation": "^1.0",
     "tinywan/limit-traffic": "^0.0.5",
     "yzh52521/webman-mailer": "^1.0",
     "shopwwi/webman-filesystem": "^1.0",
-    "shopwwi/filesystem-oss": "^1.0"
+    "shopwwi/filesystem-oss": "^1.0",
+    "workerman/validation": "^3.0"
   },
   "suggest": {
     "ext-event": "For better performance. "

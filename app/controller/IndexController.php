@@ -7,6 +7,7 @@ use support\Request;
 use support\Db;
 use Shopwwi\LaravelCache\Cache;
 use  yzh52521\EasyHttp\Http;
+use Respect\Validation\Validator;
 
 class IndexController extends BaseController
 {
@@ -49,14 +50,13 @@ class IndexController extends BaseController
 
     public function validator(Request $request)
     {
-        $validator = valiator($request->post(), [
-            'title' => 'required|unique:posts|max:255',
-            'body' => 'required',
+        $data = Validator::input($request->all(), [
+            'nickname' => Validator::length(1, 64)->setName('昵称'),
+            'username' => Validator::alnum()->length(5, 64)->setName('用户名'),
+            'password' => Validator::length(5, 64)->setName('密码')
         ]);
-        if ($validator->fails()) {
-            return json($validator->errors->first());
-        }
-        return json('ok');
+
+        return json(['code' => 0, 'msg' => 'ok']);
     }
 
 
