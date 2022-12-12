@@ -8,7 +8,7 @@ class IndexController
 {
     public function index(Request $request)
     {
-        return response('hello webman');
+        return response('hello world');
     }
 
     public function view(Request $request)
@@ -20,5 +20,4 @@ class IndexController
     {
         return json(['code' => 0, 'msg' => 'ok']);
     }
-
 }

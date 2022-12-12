@@ -1,4 +1,5 @@
 <?php
+
 /**
  * This file is part of webman.
  *
@@ -14,8 +15,7 @@
 
 use Webman\Route;
 
+//禁止默认路由规则
+Route::disableDefaultRoute();
 
-
-
-
-
+Route::get('/', [app\controller\IndexController::class, 'index']);

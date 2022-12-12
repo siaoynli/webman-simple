@@ -40,7 +40,8 @@
       "App\\": "./app"
     },
     "files": [
-      "./support/helpers.php"
+      "./support/helpers.php",
+      "./app/utils/helpers.php"
     ]
   },
   "scripts": {
