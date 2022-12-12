@@ -6,6 +6,7 @@ use app\model\Test;
 use support\Request;
 use support\Db;
 use Shopwwi\LaravelCache\Cache;
+use  yzh52521\EasyHttp\Http;
 
 class IndexController extends BaseController
 {
@@ -36,5 +37,12 @@ class IndexController extends BaseController
     {
         $test = Test::first();
         return json($test->toArray());
+    }
+
+    public function get()
+    {
+        $response = Http::get('http://www.baidu.com');
+        var_export($response);
+        return  response($response);
     }
 }
