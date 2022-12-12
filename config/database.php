@@ -21,11 +21,11 @@ return [
   'connections' => [
     'mysql' => [
       'driver'      => 'mysql',
-      'host'        => '127.0.0.1',
-      'port'        => 3306,
-      'database'    => 'test',
-      'username'    => 'root',
-      'password'    => '673cF2PKyS7drfyxW78F',
+      'host'        => getenv('DB_HOST'),
+      'port'        => getenv('DB_PORT'),
+      'database'    => getenv('DB_NAME'),
+      'username'    => getenv('DB_USER'),
+      'password'    => getenv('DB_PASSWORD'),
       'unix_socket' => '',
       'charset'     => 'utf8',
       'collation'   => 'utf8_unicode_ci',
