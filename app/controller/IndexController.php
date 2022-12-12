@@ -45,4 +45,23 @@ class IndexController extends BaseController
         var_export($response);
         return  response($response);
     }
+
+
+    public function validator(Request $request)
+    {
+        $validator = valiator($request->post(), [
+            'title' => 'required|unique:posts|max:255',
+            'body' => 'required',
+        ]);
+        if ($validator->fails()) {
+            return json($validator->errors->first());
+        }
+        return json('ok');
+    }
+
+
+    public  function limit(Request $request)
+    {
+        return json('ok');
+    }
 }

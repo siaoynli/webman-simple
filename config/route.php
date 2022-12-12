@@ -23,7 +23,12 @@ Route::get('/view', [app\controller\IndexController::class, 'view']);
 Route::get('/test', [app\controller\IndexController::class, 'db']);
 Route::get('/model', [app\controller\IndexController::class, 'test']);
 Route::get('/get', [app\controller\IndexController::class, 'get']);
+Route::get('/validator', [app\controller\IndexController::class, 'validator']);
 
+
+
+Route::any('/limit', [app\controller\IndexController::class, 'limit'])
+  ->middleware([Tinywan\LimitTraffic\Middleware\LimitTrafficMiddleware::class]);
 
 
 Route::get('/sync', [app\controller\QueueController::class, 'index']);
