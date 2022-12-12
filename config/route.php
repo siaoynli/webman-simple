@@ -28,7 +28,7 @@ Route::get('/validator', [app\controller\IndexController::class, 'validator']);
 
 
 Route::any('/limit', [app\controller\IndexController::class, 'limit'])
-  ->middleware([Tinywan\LimitTraffic\Middleware\LimitTrafficMiddleware::class]);
+  ->middleware([app\middleware\LimitTrafficMiddleware::class]);
 
 
 Route::get('/sync', [app\controller\QueueController::class, 'index']);

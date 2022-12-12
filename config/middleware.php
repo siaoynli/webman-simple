@@ -16,6 +16,6 @@
 return [
   '' => [app\middleware\HandleCors::class],
   'api' => [
-    Tinywan\LimitTraffic\Middleware\LimitTrafficMiddleware::class,
+    app\middleware\LimitTrafficMiddleware::class,
   ]
 ];
